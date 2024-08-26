@@ -10,11 +10,11 @@
 <body>
   <div id="app-root">
     <!-- المحاضره 2 -->
-     <!-- طريقة جلب البيانات  -->
+    <!-- طريقة جلب البيانات  -->
     <!-- <p>my name {{name}} i am {{age}} years old</p>-->
 
     <!-- المحاضره 3 -->
-     <!-- طريقة استخدام الدوال  -->
+    <!-- طريقة استخدام الدوال  -->
     <!-- <h3>{{sayHi("ifternoo",name)}}</h3> -->
 
     <!-- المحاضره 4 -->
@@ -35,14 +35,19 @@
       <input type="submit" name="" id="">
     </form>
     <a href="#" @click.once="test">test</a> -->
-    
+
     <!-- 7 -->
-    <!-- طريقة عمل ال Events Modifiers -->
-    <input type="text" name="" id="" @keyup="test">
+    <!-- طريقة عمل ال Keyboard Events & Modifiers -->
+    <!-- <input type="text" name="" id="" @keyup="test">
     <input type="text" name="" id="" @keydown="test">
     <input type="text" name="" id="" @keydown.enter="test">
-    <input type="text" name="" id="" @keydown.alt.enter="test">
-   
+    <input type="text" name="" id="" @keydown.alt.enter="test"> -->
+
+    <!-- 8- Two Way Data Binding -->
+    <label for="text_1">{{name}}</label>
+    <input v-model="name" type="text" name="text_1" id="text_1">
+    <button @click="name ='ali'">click</button>
+
   </div>
 
 

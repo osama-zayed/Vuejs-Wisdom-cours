@@ -64,10 +64,19 @@ const { createApp } = Vue;
 
 
 // المحضاره السابعه
+// createApp({
+//   methods: {
+//     test() {
+//       console.log("test");
+//     }
+//   }
+// }).mount("#app-root");
+
+// 8- Two Way Data Binding 
 createApp({
-  methods: {
-    test() {
-      console.log("test");
-    }
-  }
+    data() {
+            return {
+              name: "osama",
+            };
+          },
 }).mount("#app-root");
