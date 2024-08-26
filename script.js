@@ -143,24 +143,58 @@ const { createApp } = Vue;
 
 
 // 13- Looping Data (V-For)
+// createApp({
+//   data() {
+//     return {
+//       students:[
+//         {
+//           id:1,
+//           name:"osama",
+//           age:22,
+//         },
+//         {
+//           id:2,
+//           name:"ali",
+//           age:22,
+//         },
+//         {
+//           id:3,
+//           name:"ahmede",
+//           age:22,
+//         },
+//       ],
+//     };
+//   },  
+// }).mount("#app-root");
+
+// 14- Looping Data (V-For) Practice
 createApp({
   data() {
     return {
-      students:[
+      products:[
         {
           id:1,
-          name:"osama",
-          age:22,
+          title:"كيمره كانون",
+          description:"كيمره كانون 50D ",
+          price:"2000",
+          brand:"الكترونيات",
+          img:"img/product-1.jpg"
         },
         {
           id:2,
-          name:"ali",
-          age:22,
+          title:"فنيلية",
+          description:"فنيلية كم طويل زرقاء",
+          price:"3000",
+          brand:"ملابس",
+          img:"img/product-2.jpg"
         },
         {
           id:3,
-          name:"ahmede",
-          age:22,
+          title:"مصباح",
+          description:"مصباح غرفة نوم ابيض",
+          price:"5000",
+           brand:"اثاث",
+          img:"img/product-3.jpg"
         },
       ],
     };
