@@ -4,7 +4,8 @@ createApp({
     data() {
         return {
             'name': "osama",
-            'age': 22
+            'age': 22,
+            'link':"test.com"
         }
     },
     methods: {
