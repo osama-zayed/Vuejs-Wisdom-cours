@@ -19,10 +19,19 @@
     <!-- <a v-bind:href="link">test</a><br> طريقة استخدام الروابط -->
     <!-- <a :href="link">test2</a> طريقة اخرى للروابط -->
 
-    <!-- المحاضره 5 --> <!-- طريقة عمل الاحداث والتعامل معها -->
-    <h3>Number is {{number}}</h3>
+    <!-- المحاضره 5 -->
+    <!-- طريقة عمل الاحداث والتعامل معها -->
+    <!-- <h3>Number is {{number}}</h3>
     <button v-on:dblclick="increase">dblclick</button>
-    <button v-on:click="increase">Click</button>
+    <button v-on:click="increase">Click</button> -->
+
+    <!-- المحاضره 6 -->
+    <!-- طريقة عمل ال Events Modifiers -->
+    <a :href="link" @click.prevent>test</a>
+    <form action="" @submit.prevent>
+      <input type="submit" name="" id="">
+    </form>
+    <a href="#" @click.once="test">test</a>
 
   </div>
 

@@ -1,6 +1,4 @@
-const {
-    createApp
-} = Vue;
+const { createApp } = Vue;
 // المحاضره الثانية
 // createApp({
 //     data() {
@@ -37,15 +35,29 @@ const {
 // }).mount('#app-root');
 
 // المحضاره الخامسة
+// createApp({
+//     data() {
+//         return {
+//             number: 0
+//         };
+//     },
+//     methods: {
+//         increase() {
+//             this.number++;
+//         }
+//     }
+// }).mount("#app-root");
+
+// المحضاره السادسة
 createApp({
-    data() {
-        return {
-            number: 0
-        };
-    },
-    methods: {
-        increase() {
-            this.number++;
-        }
+  data() {
+    return {
+      link: "test.com"
+    };
+  },
+  methods: {
+    test() {
+      console.log("once");
     }
+  }
 }).mount("#app-root");
