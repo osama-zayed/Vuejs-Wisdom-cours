@@ -49,15 +49,25 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // المحضاره السادسة
+// createApp({
+//   data() {
+//     return {
+//       link: "test.com"
+//     };
+//   },
+//   methods: {
+//     test() {
+//       console.log("once");
+//     }
+//   }
+// }).mount("#app-root");
+
+
+// المحضاره السابعه
 createApp({
-  data() {
-    return {
-      link: "test.com"
-    };
-  },
   methods: {
     test() {
-      console.log("once");
+      console.log("test");
     }
   }
 }).mount("#app-root");
