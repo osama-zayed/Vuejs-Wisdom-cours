@@ -62,7 +62,6 @@ const { createApp } = Vue;
 //   }
 // }).mount("#app-root");
 
-
 // المحضاره السابعه
 // createApp({
 //   methods: {
@@ -72,11 +71,29 @@ const { createApp } = Vue;
 //   }
 // }).mount("#app-root");
 
-// 8- Two Way Data Binding 
+// 8- Two Way Data Binding
+// createApp({
+//   data() {
+//     return {
+//       name: "osama"
+//     };
+//   }
+// }).mount("#app-root");
+
+// 9- Two Way Data Binding Practice
 createApp({
-    data() {
-            return {
-              name: "osama",
-            };
-          },
+  data() {
+    return {
+      newUser : {
+        name: "",
+        email: "",
+        password: "",
+      }
+    };
+  },
+  methods: {
+    sendData() {
+      console.log(this.newUser);
+    }
+  }
 }).mount("#app-root");
