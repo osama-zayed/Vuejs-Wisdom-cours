@@ -49,7 +49,7 @@
     <button @click="name ='ali'">click</button> -->
 
     <!-- 9- Two Way Data Binding Practice -->
-    <form action="" method="get" @submit.prevent="sendData">
+    <!-- <form action="" method="get" @submit.prevent="sendData">
       <label for="user-name">Enter the name</label>
       <input type="text" v-model="newUser.name" name="user_name" id="user-name">
       <br>
@@ -60,12 +60,25 @@
       <input type="password" v-model="newUser.password" name="user_password" id="user-password">
       <br>
       <input type="submit" value="submit">
-    </form>
+    </form> -->
+
+    <!-- 10- Computed Property -->
+    <h2>Numer one is {{numOne}}</h2>
+    <h2>Numer one * 2 = {{increaseNumberOneChange}}</h2>
+    <button @click="numOne++">Number one change</button>
+    <h2>Numer one is {{numTwo}}</h2>
+    <h2>Numer Two + 10 = {{increaseNumberTwoChange}}</h2>
+    <button @click="numTwo++">Number one change</button>
+
+
+
+
 
   </div>
 
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- <script src="vue.js"></script> -->
   <script src="script.js"></script>
 </body>
 

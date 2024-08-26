@@ -81,19 +81,42 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 9- Two Way Data Binding Practice
+// createApp({
+//   data() {
+//     return {
+//       newUser : {
+//         name: "",
+//         email: "",
+//         password: "",
+//       }
+//     };
+//   },
+//   methods: {
+//     sendData() {
+//       console.log(this.newUser);
+//     }
+//   }
+// }).mount("#app-root");
+
+// 10- Computed Property
 createApp({
   data() {
     return {
-      newUser : {
-        name: "",
-        email: "",
-        password: "",
-      }
+      numOne: 0,
+      numTwo: 0,
     };
   },
-  methods: {
-    sendData() {
-      console.log(this.newUser);
+  methods: {},
+  computed: {
+    increaseNumberOneChange() {
+      console.log("this is number one");
+
+      return this.numOne * 2;
+    },
+    increaseNumberTwoChange() {
+      console.log("this is number two");
+
+      return this.numTwo + 10;
     }
-  }
+  },
 }).mount("#app-root");
