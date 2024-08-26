@@ -131,11 +131,38 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 12- If Conditions & V-Show
+// createApp({
+//   data() {
+//     return {
+//       name:"osama",
+//       age:22,
+//     };
+//   },  
+// }).mount("#app-root");
+
+
+
+// 13- Looping Data (V-For)
 createApp({
   data() {
     return {
-      name:"osama",
-      age:22,
+      students:[
+        {
+          id:1,
+          name:"osama",
+          age:22,
+        },
+        {
+          id:2,
+          name:"ali",
+          age:22,
+        },
+        {
+          id:3,
+          name:"ahmede",
+          age:22,
+        },
+      ],
     };
   },  
 }).mount("#app-root");

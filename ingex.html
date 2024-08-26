@@ -77,14 +77,26 @@
     <input type="text" v-model="myColor"> -->
 
     <!-- 12- If Conditions & V-Show -->
-     <h3>His name {{name}} and his age is {{age}}</h3>
-     <!-- <p v-if="age < 30 ">His age is younger than 30</p>
+    <!-- <h3>His name {{name}} and his age is {{age}}</h3> -->
+    <!-- <p v-if="age < 30 ">His age is younger than 30</p>
      <p v-else-if="age == 30 ">His age is 30</p>
      <p v-else="age > 30 ">His age is Older than 30</p> -->
-     <p v-show="age < 30 ">His age is younger than 30</p>
+    <!-- <p v-show="age < 30 ">His age is younger than 30</p>
      <p v-show="age == 30 ">His age is 30</p>
      <p v-show="age > 30 ">His age is Older than 30</p>
-     <button @click="age++">incrmunt</button>
+     <button @click="age++">incrmunt</button> -->
+
+    <!-- 13- Looping Data (V-For) -->
+    <h2 v-for="student in students" :key="student.id">
+      <p>my id is {{student.id}}</p>
+      <p>my name is {{student.name}}</p>
+      <p>my age is {{student.age}}</p>
+    </h2>
+
+
+
+
+
   </div>
 
 
