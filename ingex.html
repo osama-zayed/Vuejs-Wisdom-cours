@@ -9,10 +9,21 @@
 
 <body>
   <div id="app-root">
-    <p>my name {{name}} i am {{age}} years old</p>
-    <h3>{{sayHi("ifternoo",name)}}</h3>
-    <a v-bind:href="link">test</a><br>
-    <a :href="link">test2</a>
+    <!-- المحاضره 2 -->
+    <!-- <p>my name {{name}} i am {{age}} years old</p>طريقة جلب البيانات -->
+
+    <!-- المحاضره 3 -->
+    <!-- <h3>{{sayHi("ifternoo",name)}}</h3> طريقة استخدام الدوال -->
+
+    <!-- المحاضره 4 -->
+    <!-- <a v-bind:href="link">test</a><br> طريقة استخدام الروابط -->
+    <!-- <a :href="link">test2</a> طريقة اخرى للروابط -->
+
+    <!-- المحاضره 5 --> <!-- طريقة عمل الاحداث والتعامل معها -->
+    <h3>Number is {{number}}</h3>
+    <button v-on:dblclick="increase">dblclick</button>
+    <button v-on:click="increase">Click</button>
+
   </div>
 
 

@@ -1,16 +1,51 @@
-const { createApp } = Vue;
+const {
+    createApp
+} = Vue;
+// المحاضره الثانية
+// createApp({
+//     data() {
+//         return {
+//             'name': "osama",
+//             'age': 22,
+//         }
+//     },
+// }).mount('#app-root');
 
+// المحاضره الثالثه
+// createApp({
+//     data() {
+//         return {
+//             'name': "osama",
+//             'age': 22,
+//         }
+//     },
+//     methods: {
+//         sayHi(time, name) {
+//             return "Good" + " " + time + " " + name;
+//         }
+//     }
+
+// }).mount('#app-root');
+
+// المحضاره الرابعه
+// createApp({
+//     data() {
+//         return {
+//             'link':"test.com"
+//         }
+//     },
+// }).mount('#app-root');
+
+// المحضاره الخامسة
 createApp({
     data() {
         return {
-            'name': "osama",
-            'age': 22,
-            'link':"test.com"
-        }
+            number: 0
+        };
     },
     methods: {
-        sayHi(time, name) {
-            return "Good" + " " + time + " " + name;
+        increase() {
+            this.number++;
         }
     }
-}).mount('#app-root');
+}).mount("#app-root");
