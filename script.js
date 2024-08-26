@@ -122,10 +122,20 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 11- Dynamic Classes & Style
+// createApp({
+//   data() {
+//     return {
+//       myColor:"",
+//     };
+//   },  
+// }).mount("#app-root");
+
+// 12- If Conditions & V-Show
 createApp({
   data() {
     return {
-      myColor:"",
+      name:"osama",
+      age:22,
     };
   },  
 }).mount("#app-root");

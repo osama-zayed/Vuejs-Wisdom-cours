@@ -72,10 +72,19 @@
     <button @click="numTwo++">Number one change</button> -->
 
     <!-- 11- Dynamic Classes & Style -->
-    <h1 :class="myColor">Hello world!</h1>
+    <!-- <h1 :class="myColor">Hello world!</h1>
     <h2 :style="`color: ${myColor}`">Hello world!</h2>
-    <input type="text" v-model="myColor">
+    <input type="text" v-model="myColor"> -->
 
+    <!-- 12- If Conditions & V-Show -->
+     <h3>His name {{name}} and his age is {{age}}</h3>
+     <!-- <p v-if="age < 30 ">His age is younger than 30</p>
+     <p v-else-if="age == 30 ">His age is 30</p>
+     <p v-else="age > 30 ">His age is Older than 30</p> -->
+     <p v-show="age < 30 ">His age is younger than 30</p>
+     <p v-show="age == 30 ">His age is 30</p>
+     <p v-show="age > 30 ">His age is Older than 30</p>
+     <button @click="age++">incrmunt</button>
   </div>
 
 
