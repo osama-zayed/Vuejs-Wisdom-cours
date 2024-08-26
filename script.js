@@ -99,24 +99,33 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 10- Computed Property
+// createApp({
+//   data() {
+//     return {
+//       numOne: 0,
+//       numTwo: 0,
+//     };
+//   },
+//   methods: {},
+//   computed: {
+//     increaseNumberOneChange() {
+//       console.log("this is number one");
+
+//       return this.numOne * 2;
+//     },
+//     increaseNumberTwoChange() {
+//       console.log("this is number two");
+
+//       return this.numTwo + 10;
+//     }
+//   },
+// }).mount("#app-root");
+
+// 11- Dynamic Classes & Style
 createApp({
   data() {
     return {
-      numOne: 0,
-      numTwo: 0,
+      myColor:"",
     };
-  },
-  methods: {},
-  computed: {
-    increaseNumberOneChange() {
-      console.log("this is number one");
-
-      return this.numOne * 2;
-    },
-    increaseNumberTwoChange() {
-      console.log("this is number two");
-
-      return this.numTwo + 10;
-    }
-  },
+  },  
 }).mount("#app-root");

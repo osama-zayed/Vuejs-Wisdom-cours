@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
@@ -63,16 +64,17 @@
     </form> -->
 
     <!-- 10- Computed Property -->
-    <h2>Numer one is {{numOne}}</h2>
+    <!-- <h2>Numer one is {{numOne}}</h2>
     <h2>Numer one * 2 = {{increaseNumberOneChange}}</h2>
     <button @click="numOne++">Number one change</button>
     <h2>Numer one is {{numTwo}}</h2>
     <h2>Numer Two + 10 = {{increaseNumberTwoChange}}</h2>
-    <button @click="numTwo++">Number one change</button>
+    <button @click="numTwo++">Number one change</button> -->
 
-
-
-
+    <!-- 11- Dynamic Classes & Style -->
+    <h1 :class="myColor">Hello world!</h1>
+    <h2 :style="`color: ${myColor}`">Hello world!</h2>
+    <input type="text" v-model="myColor">
 
   </div>
 
