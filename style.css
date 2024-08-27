@@ -4,3 +4,21 @@
 .blue{
     color: blue;
 }
+.container{
+    margin:0 150px 0 150px;
+}
+.products-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.products-section .card{
+  background-color: aliceblue;
+  box-shadow: 1px #333;
+  text-align: center;
+}
+img{
+    width: 100%;
+    max-width: 200px;
+}

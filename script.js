@@ -168,6 +168,40 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 14- Looping Data (V-For) Practice
+// createApp({
+//   data() {
+//     return {
+//       products:[
+//         {
+//           id:1,
+//           title:"كيمره كانون",
+//           description:"كيمره كانون 50D ",
+//           price:"2000",
+//           brand:"الكترونيات",
+//           img:"img/product-1.jpg"
+//         },
+//         {
+//           id:2,
+//           title:"فنيلية",
+//           description:"فنيلية كم طويل زرقاء",
+//           price:"3000",
+//           brand:"ملابس",
+//           img:"img/product-2.jpg"
+//         },
+//         {
+//           id:3,
+//           title:"مصباح",
+//           description:"مصباح غرفة نوم ابيض",
+//           price:"5000",
+//            brand:"اثاث",
+//           img:"img/product-3.jpg"
+//         },
+//       ],
+//     };
+//   },  
+// }).mount("#app-root");
+
+// 15- Looping Data (V-For) - Nested Loop
 createApp({
   data() {
     return {
@@ -178,7 +212,8 @@ createApp({
           description:"كيمره كانون 50D ",
           price:"2000",
           brand:"الكترونيات",
-          img:"img/product-1.jpg"
+          img:"img/product-1.jpg",
+          colors:["red","blue","black"]
         },
         {
           id:2,
@@ -186,7 +221,8 @@ createApp({
           description:"فنيلية كم طويل زرقاء",
           price:"3000",
           brand:"ملابس",
-          img:"img/product-2.jpg"
+          img:"img/product-2.jpg",
+          colors:["red","blue","black"]
         },
         {
           id:3,
@@ -194,7 +230,8 @@ createApp({
           description:"مصباح غرفة نوم ابيض",
           price:"5000",
            brand:"اثاث",
-          img:"img/product-3.jpg"
+          img:"img/product-3.jpg",
+          colors:["red","blue","black"]
         },
       ],
     };
