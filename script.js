@@ -237,66 +237,83 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 16- Multiple Vue Instances
-const products = createApp({
+// const products = createApp({
+//   data() {
+//     return {
+//       products: [
+//         {
+//           id: 1,
+//           title: "كيمره كانون",
+//           description: "كيمره كانون 50D ",
+//           price: "2000",
+//           brand: "الكترونيات",
+//           img: "img/product-1.jpg",
+//           colors: ["red", "blue", "black"]
+//         },
+//         {
+//           id: 2,
+//           title: "فنيلية",
+//           description: "فنيلية كم طويل زرقاء",
+//           price: "3000",
+//           brand: "ملابس",
+//           img: "img/product-2.jpg",
+//           colors: ["red", "blue", "black"]
+//         },
+//         {
+//           id: 3,
+//           title: "مصباح",
+//           description: "مصباح غرفة نوم ابيض",
+//           price: "5000",
+//           brand: "اثاث",
+//           img: "img/product-3.jpg",
+//           colors: ["red", "blue", "black"]
+//         }
+//       ],
+//       count:0
+//     };
+//   }
+// }).mount("#products-section");
+// const users = createApp({
+//   data() {
+//     return {
+//       users: [
+//         {
+//           id: 1,
+//           name: "osama"
+//         },
+
+//         {
+//           id: 2,
+//           name: "ali"
+//         },
+
+//         {
+//           id: 3,
+//           name: "ahmed"
+//         }
+//       ]
+//     };
+//   },
+//   methods: {
+//     increasecount() {
+//       return products.count++;
+//     }
+//   }
+// }).mount("#users-section");
+
+// 17- Refs
+createApp({
   data() {
     return {
-      products: [
-        {
-          id: 1,
-          title: "كيمره كانون",
-          description: "كيمره كانون 50D ",
-          price: "2000",
-          brand: "الكترونيات",
-          img: "img/product-1.jpg",
-          colors: ["red", "blue", "black"]
-        },
-        {
-          id: 2,
-          title: "فنيلية",
-          description: "فنيلية كم طويل زرقاء",
-          price: "3000",
-          brand: "ملابس",
-          img: "img/product-2.jpg",
-          colors: ["red", "blue", "black"]
-        },
-        {
-          id: 3,
-          title: "مصباح",
-          description: "مصباح غرفة نوم ابيض",
-          price: "5000",
-          brand: "اثاث",
-          img: "img/product-3.jpg",
-          colors: ["red", "blue", "black"]
-        }
-      ],
-      count:0
-    };
-  }
-}).mount("#products-section");
-const users = createApp({
-  data() {
-    return {
-      users: [
-        {
-          id: 1,
-          name: "osama"
-        },
-
-        {
-          id: 2,
-          name: "ali"
-        },
-
-        {
-          id: 3,
-          name: "ahmed"
-        }
-      ]
+      age: 10
     };
   },
   methods: {
-    increasecount() {
-      return products.count++;
+    checkRefs() {
+      // console.log(this.$refs);
+      // console.log(this.$refs.myInput);
+      // console.log(this.$refs.myInput.value);
+      this.age =this.$refs.myInput.value;
     }
   }
-}).mount("#users-section");
+}).mount("#app-root");
