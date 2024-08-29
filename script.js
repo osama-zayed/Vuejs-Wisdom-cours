@@ -302,6 +302,24 @@ const { createApp } = Vue;
 // }).mount("#users-section");
 
 // 17- Refs
+// createApp({
+//   data() {
+//     return {
+//       age: 10
+//     };
+//   },
+//   methods: {
+//     checkRefs() {
+//       // console.log(this.$refs);
+//       // console.log(this.$refs.myInput);
+//       // console.log(this.$refs.myInput.value);
+//       this.age =this.$refs.myInput.value;
+//     }
+//   }
+// }).mount("#app-root");
+
+
+// 18- Components (Big Intro)
 createApp({
   data() {
     return {
