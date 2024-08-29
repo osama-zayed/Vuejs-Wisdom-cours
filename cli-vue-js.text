@@ -1,0 +1,4 @@
+npm i -g @vue/cli
+vue --version
+vue create "vue-cli"
+npm run serve

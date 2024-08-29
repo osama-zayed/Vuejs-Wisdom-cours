@@ -319,46 +319,49 @@ const { createApp } = Vue;
 // }).mount("#app-root");
 
 // 18- Components (Big Intro)
-const data = {
-  age: 10,
-  name: "osama"
-};
-const my_component = {
-  template: `
-   <h2>my age is {{age}}</h2>
-    <h2>my name is {{name}}</h2>
-    <button @click="checkRefs">click me</button>
-  `,
-  data() {
-    return {
-      age: 10,
-      name: "osama"
-    };
-  },
-  methods: {
-    checkRefs() {
-      this.age++;
-    }
-  }
-};
-const my_component_2 = {
-  template: `
-   <h2>my age is {{age}}</h2>
-    <h2>my name is {{name}}</h2>
-    <button @click="checkRefs">click me</button>
-  `,
-  data() {
-    return data;
-  },
-  methods: {
-    checkRefs() {
-      this.age++;
-    }
-  }
-};
-createApp({
-  components: {
-    my_component,
-    my_component_2,
-  }
-}).mount("#app-root");
+// const data = {
+//   age: 10,
+//   name: "osama"
+// };
+// const my_component = {
+//   template: `
+//    <h2>my age is {{age}}</h2>
+//     <h2>my name is {{name}}</h2>
+//     <button @click="checkRefs">click me</button>
+//   `,
+//   data() {
+//     return {
+//       age: 10,
+//       name: "osama"
+//     };
+//   },
+//   methods: {
+//     checkRefs() {
+//       this.age++;
+//     }
+//   }
+// };
+// const my_component_2 = {
+//   template: `
+//    <h2>my age is {{age}}</h2>
+//     <h2>my name is {{name}}</h2>
+//     <button @click="checkRefs">click me</button>
+//   `,
+//   data() {
+//     return data;
+//   },
+//   methods: {
+//     checkRefs() {
+//       this.age++;
+//     }
+//   }
+// };
+// createApp({
+//   components: {
+//     my_component,
+//     my_component_2,
+//   }
+// }).mount("#app-root");
+
+// 19- Vue-CLI (Installation)
+
